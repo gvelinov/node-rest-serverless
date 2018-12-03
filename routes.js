@@ -10,10 +10,4 @@ module.exports = (app) => {
     .post(notes.create)
     .get(notes.findAll);
 
-  // Note specific actions
-  app.route('/notes/:noteId')
-    .get(notes.findOne)
-    .put(notes.update)
-    .delete(notes.delete)
-
 }
