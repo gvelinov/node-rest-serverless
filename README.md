@@ -4,6 +4,7 @@ In this repo you can find a simple NodeJs (with Express) application of REST API
 And the purspoe is to show you how you can levarage the capabilities of Serverless and specificly using AWS. We are going to migrate the app entierly to Serverless.
 
 What we have is a tipicaly app with server and database. Here we have the deployed architecture of the app, it could be in EC2 or some shared/private host or even on Docker.
+
 ![REST API](/images/restapp.png)
 
 To run the app locally we need running instance of MongoDB. For local development I recomment to use Docker, it's easy and fast.
@@ -32,6 +33,7 @@ add the `x-api-key` header with the value of 1234 in your request._
 So far this is satisfactory. We have running servers and our users are happy. But what will happen if the usage of our API increases drastically?
 Depending on the server we choose to deploy for production AWS EC2, dedicated server or shared one, it will probably crash. 
 Yes, we can start another instance, we can scale horizontally or vertically. But this adds complication as we need more knowlage or adds the need of dedicated DevOps.
+
 ![REST API Scale](/images/ha.png)
 
 One of our options is to be Srverless. The Wiki definition of Serverless is:
@@ -40,6 +42,7 @@ One of our options is to be Srverless. The Wiki definition of Serverless is:
 Pretty boring, right? :unamused:
 
 What we are going to build now is this:
+
 ![Serverless](/images/now.png)
 
 ### API Gateway
