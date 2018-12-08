@@ -1,6 +1,6 @@
 const Note = require('../models/note.model.js');
 
-// Create and Save a new Note
+// Create and Save new Note
 exports.create = (req, res) => {
   // Validate the request
   if (!req.body.content || !req.body.title) {
